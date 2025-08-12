@@ -1,9 +1,10 @@
 use reqwest::header::{ACCEPT_LANGUAGE, USER_AGENT};
 use scraper::{Html, Selector};
+use serde::Serialize;
 use std::error::Error;
 use std::time::Duration;
 
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize)]
 pub struct SearchResult {
     pub title: String,
     pub link: String,

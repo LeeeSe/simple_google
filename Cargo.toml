@@ -1,6 +1,6 @@
 [package]
 name = "simple_google"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "A search tool that bypasses Google's CAPTCHA verification"
 license = "MIT"
@@ -21,3 +21,4 @@ reqwest = { version = "0.12.22", features = ["json"] }
 scraper = "0.23.1"
 tokio = { version = "1.47.1", features = ["full"] }
 url = "2.5.4"
+serde = { version = "1.0", features = ["derive"] }
